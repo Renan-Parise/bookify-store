@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 110%;
+    background-image: linear-gradient(145deg, #440A67 20%, #93329E 100%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#msform fieldset {
+    background: transparent;
+    border: 0 none;
+    border-radius: 0px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 25%;
+    position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #440A67;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ffffff;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #440A67;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #2098ce;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #aCbEd0;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #aCbEd0;
+}
+
+.fs-title {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+input, textarea {
+  background-color: transparent;
+}
+
+.fs-subtitle {
+    font-weight: 700;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.fs-subtitle-holder {
+  font-weight: 700;
+  text-align: left;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#progressbar li {
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #2098ce;
+    color: white;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+.select-wrapper::after {
+  background-color: transparent;
+  color: black;
+  content: '▾';
+  margin-right: 10px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 20px;
+}
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: white;
+  border: 1px solid #440A67;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 12px;
+  background-color: transparent;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.selection {
+  appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-color:#440A67;
+}
+.select::-ms-expand {
+  display: none;
+}
+
+.button-hold {
+    --color: #f6f8ff;
+    --background: #440A67;
+    --icon: var(--color);
+    font-family: 'Poppins', sans-serif;
+    --progress-border: #646b8c;
+    --progress-active: #fff;
+    --progress-success: #5c86ff;
+    --tick-stroke: var(--progress-active);
+    --shadow: rgba(0, 9, 61, .2);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    min-width: 112px;
+    padding: 12px 20px 12px 12px;
+    border: 0;
+    border-radius: 24px;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    -webkit-appearance: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 var(--shadow-y, 4px) var(--shadow-blur, 12px) var(--shadow);
+    transform: scale(var(--scale, 1)) translateZ(0);
+    color: var(--color);
+    background: var(--background);
+}
+.button-hold > div {
+    margin-right: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background: var(--progress-border);
+}
+.button-hold > div:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+    z-index: 1;
+    position: absolute;
+    background: var(--background);
+    border-radius: inherit;
+    transform: scale(var(--background-scale, 1));
+    transition: transform 0.32s ease;
+}
+.button-hold > div svg {
+    display: block;
+}
+.button-hold > div svg.icon, .button-hold > div svg.tick {
+    position: absolute;
+}
+.button-hold > div svg.icon {
+    width: 8px;
+    height: 8px;
+    left: 6px;
+    top: 6px;
+    fill: var(--icon);
+    z-index: 1;
+    transition: opacity 0.2s, transform 0.2s;
+    opacity: var(--icon-opacity, 1);
+    transform: translateY(var(--icon-y, 0)) scale(var(--icon-scale, 1));
+}
+.button-hold > div svg.progress, .button-hold > div svg.tick {
+    fill: none;
+}
+.button-hold > div svg.progress {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg) scale(var(--progress-scale, 1));
+    transition: transform 0.5s ease;
+}
+.button-hold > div svg.progress circle {
+    stroke-dashoffset: 1;
+    stroke-dasharray: var(--progress-array, 0) 52;
+    stroke-width: 16;
+    stroke: var(--progress-active);
+    transition: stroke-dasharray var(--duration) linear;
+}
+.button-hold > div svg.tick {
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--tick-stroke);
+    transition: stroke 0.3s ease 0.7s;
+}
+.button-hold > div svg.tick polyline {
+    stroke-dasharray: 18 18 18;
+    stroke-dashoffset: var(--tick-offset, 18);
+    transition: stroke-dashoffset 0.4s ease 0.7s;
+}
+.button-hold:focus:not(.process), .button-hold:hover:not(.process) {
+    --shadow-y: 8px;
+    --shadow-blur: 16px;
+}
+.button-hold:active:not(.success) {
+    --scale: 0.96;
+    --shadow-y: 4px;
+    --shadow-blur: 8px;
+}
+.button-hold.process, .button-hold.success {
+    --progress-array: 52;
+    --icon-y: -4px;
+    --icon-scale: 0.6;
+    --icon-opacity: 0;
+}
+.button-hold.success {
+    --progress-border: none;
+    --progress-scale: 0.11;
+    --tick-stroke: var(--progress-success);
+    --background-scale: 0;
+    --tick-offset: 36;
+}
+.button-hold.success > div svg.progress {
+    animation: tick 0.3s linear forwards 0.4s;
+}
+@keyframes tick {
+    100% {
+        transform: rotate(-90deg) translate(0, -5px) scale(var(--progress-scale));
+   }
+}
+body .dribbble {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+}
+body .dribbble img {
+    display: block;
+    height: 28px;
+}
+body .twitter {
+    position: fixed;
+    display: block;
+    right: 64px;
+    bottom: 14px;
+}
+body .twitter svg {
+    width: 32px;
+    height: 32px;
+    fill: #8b0a97;
+}

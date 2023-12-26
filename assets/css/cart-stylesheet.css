@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+    --vermelho: #93329E;
+    --verde: #d71070;
+    --amarelo: #440A67;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes opt-animation4 {
+ 0% {
+   transform: scale(0) rotate(360deg);
+ }
+ 60% {
+   transform: scale(0.8) rotate(-10deg);
+ }
+ 100% {
+   transform: scale(1) rotate(0deg);
+ }
+}
+.modal h2{
+  font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+}
+.modal{
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal label{
+   font-size: 18px;
+   font-weight: 700;
+}
+.modal input,.modal textarea{
+   font-size: 14px;
+   font-weight: 100;
+   width: 80%;
+   margin: 0 10%;
+}
+.modal .form-group{
+   margin: 15px 0;
+}
+.empty{
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.number span {
+    cursor:pointer;
+ }
+
+.number{
+    margin: 5px 0;
+}
+
+.btn {
+    margin-top: -30px;
+}
+
+.minus, .plus{
+   width:15px;
+   height:15px;
+   background:transparent;
+   border-radius:50%;
+   margin: 60px 10px;
+   display: inline-block;
+   vertical-align: middle;
+}
+.number input{
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+   height:44px;
+   margin-top: 25px;
+   margin-left: 10px;
+   border: none;
+   width: 60px;
+   text-align: center;
+   font-size: 22px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.selectedPrice {
+    font-size: 30px;
+}
+
+.selectedImage {
+    float: right;
+    width: 100px !important;
+    margin-top: -50px;
+}
+#total{
+   padding: 5px;
+   font-size: 24px;
+   font-weight: 900;
+}
+#cost{
+   margin-left: -5px;
+   font-size: 24px;
+   font-weight: 600;
+}
+.button{
+   display: flex;
+   justify-content: center;
+   transform: scale(0.9);
+   margin-top: 23px;
+   float: right;
+   margin-right: 69.5px;
+}
+.button .place{
+    background: #440A67;
+    color: white;
+    width: 110px;
+    height: 40px;
+    font-size: 17px;
+    float: right;
+    position: absolute;
+}
+.dropdown-menu{
+   width: 500px!important;
+   margin-top: 35px;
+}
+.cart{
+  width: 180px;
+  margin-top: -8px;
+}
+.card-buy{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: var(--amarelo)!important;
+    border-radius: 30px!important;
+    overflow: hidden;
+    margin-left: 10px;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.2) !important;
+}
+.card-buy::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: var(--vermelho);
+    transform: skewY(360deg);
+    transition: 0.5s;
+}
+.card-buy:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card-buy::after{
+    content: '1';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgb(0,0,0,0.1);
+}
+.card-buy .imgBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card-buy .imgBox img{
+    width: 140px;
+    max-width: 100%;
+    transition: .5s;
+}
+.card-buy:hover .imgBox img{
+    width:160px;
+    margin-top:-20px;
+}
+
+.card-buy .contentBx{
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.card-buy .contentBx h3{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.card-buy .contentBx .price{
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.card-buy .contentBx .buy{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(23, 218, 32);
+    border-radius: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card-buy:hover .contentBx .buy{
+    top: -10px;
+    opacity: 2;
+}
+.card-buy .contentBx .remove{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background:#df1818;
+    border-radius: 30px; 
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card-buy:hover .contentBx .remove{
+    top: -10px;
+    opacity: 2;
+}
+ 
+.card-buy .inside {
+    z-index: 9;
+    background: var(--amarelo);
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+ }
+ 
+ .card-buy .inside .icon {
+    position: absolute;
+    right: 85px;
+    top: 85px;
+    color: white;
+    opacity: 1;
+    cursor:pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+ }
+ 
+ .card-buy .inside:hover {
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    height: 100%;
+    cursor:pointer;
+
+ }
+ 
+ .card-buy .inside:hover .icon {
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+ }
+ 
+ .card-buy .inside:hover .contents {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+ }
+ 
+ .card-buy .inside .contents {
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity 0.2s, transform 0.8s;
+ }
+ 
+ .card-buy .inside .contents h2,
+ .card-buy .inside .contents p {
+    color: white;
+ }
+ 
+ .card-buy .inside .contents p {
+    font-size: 13px;
+ }
+
+ .counter {
+   font-size: 38px !important;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   float: right;
+   margin-top: 6px;
+   margin-left: -25px;
+ }
+
+ .contents h2 {
+     font-size: 30px;
+     margin-bottom: 10px;
+ }
+
+ .empty {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+ }
+
+ .empty:hover {
+     color: #000;
+ }
+
+

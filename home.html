@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>Bookify - A melhor loja de livros do Brasil</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/cart-stylesheet.css">
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="home.html" class="logo">
+                            Bookify
+                        </a>
+
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#" class="menu-item">Home</a></li>
+                            </li>
+                            <li class="submenuban">
+                                <a href="javascript:;">Português</a>
+                                <ul>
+                                    <li><a href="" class="menu-item-ban"><img src="assets/images/tur.png">&nbsp;&nbsp;Turco</a></li>
+                                    <li><a href="" class="menu-item-ban"><img src="assets/images/fr.png">&nbsp;&nbsp;Francês</a></li>
+                                    <li><a href="" class="menu-item-ban"><img src="assets/images/italia.png">&nbsp;&nbsp;Italiano</a></li>
+                                    <li><a href="" class="menu-item-ban"><img src="assets/images/uk.png">&nbsp;&nbsp;Inglês</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="../bookify/login.html" class="login">Log-in</a>
+                                <li class="scroll-to-section"><div class="dropdown text-left m-5 cart">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                        <img class="cart" src="assets/images/shopping-cart.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub class="counter" id="clickme">0</sub>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li class="ml-2" id="item">
+                                        <a href="#">
+                                          <span class="empty">SEU CARRINHO ESTÁ VAZIO.</span>
+                                         <span class="product"><br></span><br><span class="selectedPrice"></span><br> <img class="selectedImage">
+                                        </a>
+                                        <div class="number">
+                                          <span class="minus"><img src="assets/minus.png"></span>
+                                          <input type="text" value="1" name="numberOfProducts" class="input">
+                                          <span class="plus"><img src="assets/plus.png"></span>
+                                        </div>
+                                        
+                                       </li>
+                                      <span id="total"></span><span id="cost"></span>
+                                      <div class="button">
+                                          <button class="btn place" data-toggle="modal" data-target="#form">COMPRAR</button>
+                                        </div>
+                                    </ul>
+                                  </div></li>
+                            <li class="scroll-to-section">
+                                <div class="search">
+                                    <input type="checkbox" id="trigger" class="search__checkbox" />
+                                    <label class="search__label-init" for="trigger"></label>
+                                    <label class="search__label-active" for="trigger"></label>
+                                    <div class="search__border"></div>
+                                    <input type="text" class="search__input" />
+                                    <div class="search__close"></div>
+                                  </div>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="welcome-area" id="welcome">
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>A MELHOR LOJA DE LIVROS DO <em class="dc">BRA</em><em class="sc">SIL</em></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore. 
+                            Ut enim ad minim eu fugiat nulla pariatur. Excepteur 
+                            sint occaecat cupidatat non proident, sunt in culpa qui deserunt mollit anim id est laborum.</p> 
+                        <a href="#about" class="main-button-slider">CONHEÇA-NOS MELHOR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <h1>Destaques da <em>Bookify</em></h1>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="produto.html"><img src="assets/images/harry.jpg" alt="card1" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">HARRY POTTER: PEDRA FILOSOFAL</h3>
+                            <h2 class="price">R$<span class="productPrice">179,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Harry Potter: Pedra Filosofal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/cortesespinhos.jpg" alt="card2" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">CORTE DE ESPINHOS E ROSAS</h3>
+                            <h2 class="price">R$<span class="productPrice">209,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">RemoveR</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Corte de Espinhos e Rosas</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/aselecao.jpg" alt="card3" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">A SELEÇÃO</h3>
+                            <h2 class="price">R$<span class="productPrice">149,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>A Seleção</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/cidade-da-lua.jpg" alt="card4" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">CIDADE DA LUA: CASA DE SANGUE</h3>
+                            <h2 class="price">R$<span class="productPrice">113,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Harry Potter: Pedra Filosofal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Livros em promoção da <em>Bookify</em></h1>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="produto.html"><img src="assets/images/harry.jpg" alt="card1" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">HARRY POTTER: PEDRA FILOSOFAL</h3>
+                            <h2 class="price">R$<span class="productPrice">179,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Harry Potter: Pedra Filosofal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/cortesespinhos.jpg" alt="card2" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">CORTE DE ESPINHOS E ROSAS</h3>
+                            <h2 class="price">R$<span class="productPrice">209,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">RemoveR</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Corte de Espinhos e Rosas</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/aselecao.jpg" alt="card3" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">A SELEÇÃO</h3>
+                            <h2 class="price">R$<span class="productPrice">149,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>A Seleção</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/cidade-da-lua.jpg" alt="card4" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">CIDADE DA LUA: CASA DE SANGUE</h3>
+                            <h2 class="price">R$<span class="productPrice">113,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Harry Potter: Pedra Filosofal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Indicações da <em>Bookify</em></h1>
+            <div class="row cards-2">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="produto.html"><img src="assets/images/harry.jpg" alt="card1" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">HARRY POTTER: PEDRA FILOSOFAL</h3>
+                            <h2 class="price">R$<span class="productPrice">179,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Harry Potter: Pedra Filosofal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/cortesespinhos.jpg" alt="card2" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">CORTE DE ESPINHOS E ROSAS</h3>
+                            <h2 class="price">R$<span class="productPrice">209,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">RemoveR</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Corte de Espinhos e Rosas</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/aselecao.jpg" alt="card3" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">A SELEÇÃO</h3>
+                            <h2 class="price">R$<span class="productPrice">149,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>A Seleção</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-buy">
+                        <div class="imgBox">
+                            <a href="#"><img src="assets/images/cidade-da-lua.jpg" alt="card4" border="0"></a>
+                        </div>
+                        <div class="contentBx">
+                            <h3 class="productName">CIDADE DA LUA: CASA DE SANGUE</h3>
+                            <h2 class="price">R$<span class="productPrice">113,99</span></h2>
+                            <a href="#" class="buy">COMPRAR</a>
+                            <a href="#" class="remove">Remover</a>
+                        </div>
+                      <div class="inside">
+                          <div class="icon"><i class="material-icons">+</i></div>
+                          <div class="contents">
+                            <h2>Harry Potter: Pedra Filosofal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dignissimos repellendus excepturi quia omnis, numquam maiores ut?
+                                Laborum, id sint. Expedita.</p>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    
+    <section class="section" id="about">
+        <div class="container">
+            <div class="center-heading top-info">
+                <h2>Porquê comprar na <em>Bookify</em>?</h2>
+                <p>Suspendisse vitae laoreet mauris. Fusce a nisi dapibus, euismod purus non, convallis odio.
+                    Donec vitae magna ornare, pellentesque ex vitae, aliquet urna.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="assets/images/features-icon-1.png" alt="">
+                            <h4>Ferramenta de Pesquisa</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Use a ferramenta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="assets/images/features-icon-2.png" alt="">
+                            <h4>Site Otimizado</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Descubra mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="assets/images/features-icon-3.png" alt="">
+                            <h4>Rapidez na entrega</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Mais detalhes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <ul>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="assets/images/about-icon-01.png" alt="">
+                            <div class="text">
+                                <h4>Desenvolvimento</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore. us for
+                                Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+                            <img src="assets/images/about-icon-02.png" alt="">
+                            <div class="text">
+                                <h4>Desenvolvimento</h4>
+                                <p>Você pode Duis viverra, ipsum et scelerisque placerat, orci no nosso website. Duis viverra, ipsum et scelerisque placerat, orci
+                                    magna consequat ligula.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                            <img src="assets/images/about-icon-03.png" alt="">
+                            <div class="text">
+                                <h4>Desenvolvimento</h4>
+                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
+                                    maximus porta. Curabitur tristique lacus.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+ 
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" id="name" placeholder="Nome Completo" required=""
+                                                style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" placeholder="Endereço de E-Mail"
+                                                required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Diga-nos o que você precisa..."
+                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Enviar Mensagem</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h2>FALE COM A BOOKIFY</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore. 
+                            Ut enim ad minim eu fugiat nulla pariatur. Excepteur
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore. 
+                            Ut enim ad minim eu fugiat nulla pariatur. Excepteur</p>
+                            <ul class="contactus">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; 2021 Bookify Landing Page
+
+                        | Designed by <a rel="nofollow" href="https://www.instagram.com/renanscps/">Renan Parise</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
